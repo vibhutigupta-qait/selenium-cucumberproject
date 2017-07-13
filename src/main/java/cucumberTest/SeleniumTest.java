@@ -24,13 +24,11 @@ public class SeleniumTest {
  
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
  
-        //Launch the Online Store Website
- 
-        driver.get("http://webmail.qainfotech.com");
+      driver.get("http://webmail.qainfotech.com");
  
         // Find the element that's ID attribute is 'account'(My Account) 
  
-        driver.findElement(By.xpath(".//*[@id='username']")).sendKeys("vibhutigupta");;
+        driver.findElement(By.xpath(".//*[@id='username']")).sendKeys("vibhutigupta");
         
  
         // Find the element that's ID attribute is 'log' (Username)
@@ -41,9 +39,10 @@ public class SeleniumTest {
  
         // Find the element that's ID attribute is 'pwd' (Password)
  
-        // Enter Password on the element found by the above desc.
  
         driver.findElement(By.xpath("html/body/div/div[1]/div[1]/form/table/tbody/tr[3]/td[2]/input[2]")).click();
+        
+        System.out.println("login successfully");
  
         
         // Close the driver
