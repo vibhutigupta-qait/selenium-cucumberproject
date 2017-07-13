@@ -45,7 +45,7 @@ public class SeleniumTest {
         System.out.println("login successfully");
  
         
-        // Close the driver session
+        // Close the driver session after tes execution
  
         driver.quit();
  
